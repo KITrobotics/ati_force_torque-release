@@ -5,6 +5,7 @@ Node:
     ft_pull_freq: 800
     sensor_frame: "fts_reference_link"
     transform_frame: "fts_base_link"
+    static_application: false
 
 Calibration:
     Offset:
@@ -28,8 +29,8 @@ MovingMeanFilter:
   params: {divider: 4}
 
 GravityCompensation:
-  name: GravityCompensationWrench
-  type: iirob_filters/GravityCompensator
+  name: GravityCompensator
+  type: iirob_filters/GravityCompensatorWrench
   params: {world_frame: "base_link"}
 
 Publish:
@@ -39,3 +40,4 @@ Publish:
     transformed_data: true
     gravity_compensated: true
     threshold_filtered: true
+    output_data: true
