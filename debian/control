@@ -1,0 +1,13 @@
+Source: ros-melodic-ati-force-torque
+Section: misc
+Priority: optional
+Maintainer: Denis Štogl (KIT, IAR-IPR) <denis.stogl@kit.edu>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-cmake-modules, ros-melodic-cob-generic-can, ros-melodic-filters, ros-melodic-force-torque-sensor, ros-melodic-gazebo-ros, ros-melodic-geometry-msgs, ros-melodic-hardware-interface, ros-melodic-iirob-filters, ros-melodic-libmodbus, ros-melodic-message-generation, ros-melodic-pluginlib, ros-melodic-realtime-tools, ros-melodic-roscpp, ros-melodic-roslaunch, ros-melodic-rosparam-handler, ros-melodic-rospy, ros-melodic-rostopic, ros-melodic-std-msgs, ros-melodic-std-srvs, ros-melodic-teleop-twist-joy, ros-melodic-tf2, ros-melodic-tf2-geometry-msgs, ros-melodic-tf2-ros, ros-melodic-trajectory-msgs, ros-melodic-visualization-msgs
+Homepage: http://ros.org/wiki/ati_force_torque
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ati-force-torque
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-cob-generic-can, ros-melodic-filters, ros-melodic-force-torque-sensor, ros-melodic-gazebo-ros, ros-melodic-geometry-msgs, ros-melodic-hardware-interface, ros-melodic-iirob-filters, ros-melodic-libmodbus, ros-melodic-message-runtime, ros-melodic-pluginlib, ros-melodic-realtime-tools, ros-melodic-robot-state-publisher, ros-melodic-roscpp, ros-melodic-roslaunch, ros-melodic-rosparam-handler, ros-melodic-rospy, ros-melodic-rostopic, ros-melodic-std-msgs, ros-melodic-std-srvs, ros-melodic-teleop-twist-joy, ros-melodic-tf2, ros-melodic-tf2-geometry-msgs, ros-melodic-tf2-ros, ros-melodic-trajectory-msgs, ros-melodic-visualization-msgs, ros-melodic-xacro
+Description: This package implements driver for ATI force torque sensors up to firmware 3.x.
+ Char and Net CAN devices are supported through cob_generic_can package. The code if based on cob_forcetorque package.
